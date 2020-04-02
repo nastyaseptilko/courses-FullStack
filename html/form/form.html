@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+
+
+
+    <form action="http://google.com" method="GET">
+
+        <label for="firstname"> First Name:</label>
+        <input required id="firstname" name="username" placeholder="Enter your name" type="text">
+
+        <p>
+            <label for="lastname"> Last Name:</label>
+            <input id="lastname" name="lastname" placeholder="Enter your last name" type="text">
+        </p>
+
+        <p>
+            <label for="email"> Email: </label>
+            <input required id="email" name="email" placeholder="Enter your email" type="email">
+        </p>
+
+        <p>
+            <label for="password"> Password: </label>
+            <input id="password" name="userpassword" placeholder="Enter your password" type="password">
+        </p>
+
+        <p>
+            <label for="check"> Stay logged in: </label>
+            <input id="check" name="logget" type="checkbox">
+        </p>
+
+        <p>
+            <label for="radioM"> male: </label>
+            <input id="radioM" type="radio" name="sex" value="male" >
+        </p>
+
+        <p>
+            <label for="radioF"> female:   </label>
+            <input id="radioF" type="radio" name="sex" value="female">
+        </p>
+
+        <p>
+            <label for="color"> Choose your  favorite color:   </label>
+            <input id="color" name="color" type="color">
+        </p>
+        <p>Chose your favorite animals:</p>
+        <p>
+            <select name="animal">
+                <option> Cat </option>
+                <option> Dog </option>
+                <option> Rat </option>
+            </select>
+        </p>
+        <p>
+            <label for="submit"> Submit data:</label>
+            <input id="submit" type="submit" value="Submit">
+        </p>
+
+
+    </form>
+
+</body>
+</html>

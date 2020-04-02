@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>specificity and  inheritance</title>
+    <style type="text/css">
+        ol{
+            color: #4CAF50;
+        }
+        body{
+            color: #FF0000;
+        }
+
+        li{
+            color: #0000FF;
+        }
+        .yellow{
+            color: yellow;
+        }
+        #special{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web</h1>
+    <ol>
+        <li class="yellow" id="special" style="color: purple">HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li class="yellow">Python</li>
+    </ol>
+
+</body>
+</html>

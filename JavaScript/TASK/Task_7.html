@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+<button id="button" style="height: 50px; width: 150px">Change the color</button>
+<script>
+    /*    document.getElementById('button').onclick = function(){
+            document.body.style.backgroundColor = (document.body.style.backgroundColor == '') ? 'blue' : '';
+        }*/
+
+    var body = document.getElementsByTagName("body")[0];
+    var button = document.getElementById("button");
+
+    function changeColor() {
+        if (body.style.background === '' || body.style.background === "white") {
+            body.style.background = "blue"
+        } else {
+            body.style.background = "white"
+        }
+    }
+
+    button.addEventListener("click", changeColor);
+
+</script>
+</body>
+</html>

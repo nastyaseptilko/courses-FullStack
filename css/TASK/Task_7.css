@@ -1,0 +1,14 @@
+.onePar{
+     background: #1FE21D;
+     float: left;
+ }
+.twoPar{
+    background: #dd85c4;
+    float: right;
+}
+.threePar{
+    background: aquamarine;
+}
+.clear{
+    clear: both;
+}

@@ -1,0 +1,30 @@
+p{
+
+}
+#my-div{
+
+}
+.class{
+
+}
+#my-div *{
+    border: 2px solid green;
+}
+li a {
+    background: #FFFF02;
+}
+h3 + ul{
+    color: #FF0000;
+ }
+ a[href="https://masterofcode.com/"]{
+     background: #4CAF50;
+ }
+
+ ul:nth-of-type(2){
+     background: #0000FF;
+     color: white;
+ }
+ p:nth-of-type(4){
+     background: #0000FF;
+     color: white;
+ }

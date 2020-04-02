@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello jQuery</title>
+    <script src="download/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<style type="text/css">
+    .firstThreeElements{
+        background: purple;
+    }
+    .lastElements{
+        background: lawngreen;
+    }
+    .done{
+        text-decoration: line-through;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Header h2</h2>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("h2").click(function () {
+            $(this).css("background-color", "blue");
+        });
+        $('li').first().click(function () {
+            alert('First element is clicked');
+        });
+        $('li').click(function () {
+            $(this).css("color", "green");
+        });
+        $('li').click(function () {
+            var text = $(this).text();
+           console.log('You have clicked '+ text);
+        });
+        $("li:lt(3)").addClass('firstThreeElements');
+        $("li:lt(3)").removeClass('firstThreeElements');
+        $("li:gt(2)").addClass('lastElements');
+        $("li").first().toggleClass("done");
+        $("li").toggleClass("done");
+
+        $('input').keypress(function () {
+            alert("you have pressed the key!")
+        });
+        $('input').keypress(function (event) {
+            if(event.which === 13){
+                console.log("you have pressed ENTER")
+            }
+
+        });
+    });
+
+</script>
+
+<input placeholder="input">
+
+<h1>Rainbow Colors</h1>
+<ol>
+    <li class="red">Red</li>
+    <li>Orange</li>
+    <li>Yellow</li>
+    <li>Green</li>
+    <li id="blue" value="2">Blue</li>
+    <li>Indigo</li>
+    <li>Violet</li>
+</ol>
+<select>
+    <option>one</option>
+    <option>two</option>
+    <option>tree</option>
+</select>
+<img src="original.png" style="width:20%; height: 20%">
+<img src="original.png" style="width:20%; height: 20%">
+<img src="original.png" style="width:20%; height: 20%">
+<!--<script type="text/javascript"> &lt;!&ndash; пррка на установку библиотеки&ndash;&gt;-->
+<!--    if(jQuery){-->
+<!--        alert("Jquery is added");-->
+<!--    }else{-->
+<!--        alert("Jquery is not added");-->
+<!--    }-->
+<!--</script>-->
+
+</body>
+</html>

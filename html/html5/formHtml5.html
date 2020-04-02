@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms html 5</title>
+</head>
+<body>
+
+    <form id="myForm">
+       <p>Placeholder: <input type="text" placeholder="Input some text here"></p>
+
+        <p>Autofocus:<input type="text" autofocus></p>
+
+        <p>Required:<input type="text" required></p>
+
+        <p>Email:<input type="email" ></p>
+
+        <p>Pattern:<input type="text" pattern="[0-9]" ></p>
+
+        <datalist id="colors">
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Blue</option>
+            <option>Green</option>
+        </datalist>
+        <p>Autocomplete: <input type="text" list="colors"></p>
+
+        <p><input type="submit" value="submit"></p>
+    </form>
+
+    <p>Autocomplete: <input form="myForm" type="text" list="colors"></p>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html 5</title>
+	
+	<script type="text/javascript"> document.createElement("myContainer");</script>
+</head>
+<body>
+
+<video width="500" height="300" controls> 
+	<source src="1.mp4" type="video/mp4">
+</video>
+
+<p> 
+<audio controls>
+	<source src="zivert_-_zelenye-volny.mp3" type="audio/mp3">
+</audio>
+</p>
+
+<article>
+Random text 
+</article>
+
+<myContainer> My teg </myContainer>
+
+<figure>
+	<img id="ninja" src="ninja.png" alt="Ninja image" data-imageDescription="Ninja with knife">
+	<figcaption>
+	<p>Web code ninja</p>
+	</figcaption>
+
+</figure>
+
+<!-- <script type="text/javascript" >
+alert(document.getElementById("ninja").getAttribute("data-imageDescription"));
+</script> --> 
+
+<input type="range" min="1" max="1000" step="100" > 
+<p contenteditable="true"> 
+Some paragraph
+</p>
+
+<ul contenteditable="true">
+<li>HTML</li>
+<li>CSS</li>
+<li>JS</li>
+<li>PHP</li>
+</ul>
+
+ <header> Верхняя часть страницы</header>
+ 
+ <footer>Нижняя часть страницы</footer>
+ 
+ <section>Для отделов внутри страницы</section>
+ 
+ <nav>Навигация</nav>
+
+<form id="myForm">
+	<p>Placeholder: <input type="text" placeholder="Input some text here"></p>
+
+	<p>Autofocus:<input type="text" autofocus></p>
+
+	<p>Required:<input type="text" required></p>
+
+	<p>Email:<input type="email" ></p>
+
+	<p>Pattern:<input type="text" pattern="[0-9]" ></p>
+
+	<datalist id="colors">
+		<option>Red</option>
+		<option>Orange</option>
+		<option>Blue</option>
+		<option>Green</option>
+	</datalist>
+	<p>Autocomplete: <input type="text" list="colors"></p>
+
+	<p><input type="submit" value="submit"></p>
+</form>
+
+<p>Autocomplete: <input form="myForm" type="text" list="colors"></p>
+</body>
+</html>
