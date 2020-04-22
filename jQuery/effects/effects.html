@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>effects</title>
+    <script src="download/jquery-3.4.1.min.js"></script>
+</head>
+<br>
+
+<input placeholder="input">
+
+<h1>Rainbow Colors</h1>
+<ol>
+    <li class="red">Red</li>
+    <li>Orange</li>
+    <li>Yellow</li>
+    <li>Green</li>
+    <li id="blue" value="2">Blue</li>
+    <li>Indigo</li>
+    <li>Violet</li>
+</ol>
+<select>
+    <option>one</option>
+    <option>two</option>
+    <option>tree</option>
+</select>
+</br>
+<button id="fadeOut">
+    Fade out
+</button>
+<button id="fadeIn">
+   Fade in
+</button>
+</br>
+<button id="fadeToggle">
+    Fade toggle
+</button>
+</br>
+<button id="slideUp">
+    Slide Up
+</button>
+<button id="slideDown">
+    Slide Down
+</button>
+</br>
+<button id="slideToggle">
+    Slide
+</button>
+<script type="text/javascript">
+$('#fadeOut').on('click',function () {
+  //  $('h1').fadeOut('slow');
+    $('h1').fadeOut(3000,function () {
+        console.log("fading completed")
+    });
+})
+$('#fadeIn').on('click',function () {
+    //  $('h1').fadeOut('slow');
+    $('h1').fadeIn(3000,function () {
+        console.log("fading in completed")
+    });
+})
+$('#fadeToggle').on('click',function () {
+    //  $('h1').fadeOut('slow');
+    $('h1').fadeToggle(1000,function () {
+        console.log("fading toggle completed")
+    });
+})
+
+
+$('#slideUp').on('click',function () {
+  // $('li').slideUp('slow');
+    $('li').slideUp(1000,function () {
+        console.log("slide Up")
+    })
+})
+$('#slideDown').on('click',function () {
+    // $('li').slideUp('slow');
+    $('li').slideDown(1000,function () {
+        console.log("slide Down")
+    })
+})
+
+$('#slideToggle').on('click',function () {
+    // $('li').slideUp('slow');
+    $('li').slideToggle(1000);
+})
+
+</script>
+</body>
+</html>

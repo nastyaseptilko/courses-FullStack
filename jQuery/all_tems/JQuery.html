@@ -49,8 +49,22 @@
             if(event.which === 13){
                 console.log("you have pressed ENTER")
             }
-
         });
+        $('h1').on('click', function () {
+            $('h1').css('background','yellow')
+        })
+        $('li').on('click', function () {
+            $(this).css('background','yellow')
+        })
+        $('li').on('mouseenter', function () {
+            $(this).css('color','red')
+            $(this).css('width','10%')
+        })
+        $('li').on('mouseleave', function () {
+            $(this).css('color','black')
+            $(this).css('width','10%')
+        })
+
     });
 
 </script>
